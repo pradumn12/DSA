@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class LeaderInArray {
     public static void main(String[] args) {
         int[] arr = {10, 22, 12, 3, 0, 6};
-        Solution(arr);//6 12 22 
+        Solution(arr); 
     }
     public static void Solution(int[] arr){
         int n = arr.length;
