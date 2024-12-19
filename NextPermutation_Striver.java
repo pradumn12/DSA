@@ -1,5 +1,9 @@
 import java.util.Arrays;
 
+/*Find the longest break point
+ * Swap with the number just greater than one
+ * reverse from index+1 till end
+ */
 public class NextPermutation_Striver{
     public static void main(String[] args) {
         //int[] nums = {2,1,5,4,3,0,0}; // 2 3 0 0 1 4 5
