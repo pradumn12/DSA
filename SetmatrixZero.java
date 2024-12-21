@@ -7,7 +7,7 @@ public class SetmatrixZero {
         int row = arr.length;             
         int col = arr[0].length; 
         //int result[][] = Solution_BF(arr,row,col);  
-        int result[][] = Solution_Better(arr,row,col);
+        int result[][] = Solution_Better(arr,row,col); //Better TC O(N2)  SC O(row_matrix + col_matrix) = O(n+m)
          
         for(int i=0;i<row;i++){
             for(int j=0;j<col;j++){
