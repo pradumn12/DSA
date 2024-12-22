@@ -7,8 +7,8 @@ public class LongestSubArrayWithGivenSumK_AllSolution {
         int sum = 10;
         //Solution_BF(arr,N,sum);// TC O(N3)
         //Solution_Better(arr,N,sum);// TC O(N2)
-        //Solution_Optimal(arr,N,sum);// TC O(N)
-        Solution_Prefix_PositiveNegative(arr,N,sum);
+        Solution_Optimal(arr,N,sum);// TC O(N)
+        //Solution_Prefix_PositiveNegative(arr,N,sum);
     }
     public static void Solution_Prefix_PositiveNegative(int[] arr,int N,int sum){
         HashMap<Integer,Integer> prefixMap = new HashMap<>();
@@ -34,12 +34,7 @@ public class LongestSubArrayWithGivenSumK_AllSolution {
         System.out.println("Max length:"+maxlength);
 
     }
-
-
-
-
-
-
+    //2,3,5,1,9
     public static void Solution_Optimal(int[] arr,int N,int sum){
         int left =0, right = 0,length=0;
         int add = arr[0];
