@@ -8,7 +8,7 @@ public class CountSubarraySumEqualsK {
         //Solution_BF(arr,k);
         //Solution_Better(arr,k);
         //Solution_Optimal_SlidingWindow(arr,k);// need to modify for input {1} & {-1,-1,1} and k=0
-        Solution_Optimal(arr,k);
+        Solution_Optimal(arr,k); //Imp 
     }
     public static void Solution_Optimal(int[] arr,int k){
         int n = arr.length;
