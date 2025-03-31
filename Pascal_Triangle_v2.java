@@ -2,10 +2,24 @@ import java.util.List;
 import java.util.Arrays;
 public class Pascal_Triangle_v2 {
     public static void main(String[] args) {
-        System.out.println(Solution(3));
-        System.out.println(Solution(4));
-        System.out.println(Solution(5));
-        
+        //System.out.println(Solution(3)); //O(N2)
+        //System.out.println(Solution(4));
+        //System.out.println(Solution(5));
+
+        System.out.println(Solution_Optimal(5)); // O(N)
+
+    }
+    public static List<Integer> Solution_Optimal(int row){
+        Integer[] arr = new Integer[row];
+        arr[0] = 1; arr[row-1] = 1;
+        long result = 1;
+        for(int i=1;i<row-1;i++){
+            result*=(row-i);
+            result/=i;
+            arr[i] = (int) result;
+        }
+        return Arrays.asList(arr);
+
     }
     public static List<Integer> Solution(int row){
 
