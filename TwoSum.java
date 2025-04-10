@@ -2,8 +2,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 public class TwoSum {
     public static void main(String[] args) {
-        int[] arr = {2,6,5,8,11};// 2 5 6 8 11
-        int target = 14;
+        int[] arr = {3,3};// 2 5 6 8 11 //2,6,5,8,11
+        int target = 6; //14
         //Solution_BF(arr,target);// O(N2)
         Solution_HashMap(arr,target);//O(N)
         //Solution_UsingPointers(arr,target);//O(N)+O(N*logN) loop + sorting
